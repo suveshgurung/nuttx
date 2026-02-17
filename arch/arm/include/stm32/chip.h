@@ -2174,6 +2174,32 @@
 #  define STM32_NRNG                     1   /* Random number generator (RNG) */
 #  define STM32_NDCMI                    1   /* Digital camera interface (DCMI) */
 
+#elif defined(CONFIG_ARCH_CHIP_STM32F427A)   /* UFBGA169 1024/2048Kib flash 256Kib SRAM */
+#  define STM32_NFMC                     1   /* FMC */
+#  define STM32_NATIM                    2   /* Two advanced timers TIM1 and TIM8 */
+#  define STM32_NGTIM                    4   /* 16-bit general timers TIM3 and TIM4 with DMA
+                                                32-bit general timers TIM2 and TIM5 with DMA */
+#  define STM32_NGTIMNDMA                6   /* 16-bit general times TIM9-TIM14 without DMA */
+#  define STM32_NBTIM                    2   /* Two 16-bit basic timers TIM6 and TIM7. with DMA */
+#  define STM32_NDMA                     2   /* Two general purpose DMA with 8 streams each */
+#  define STM32_NSPI                     6   /* SPI1-SPI6 */
+#  define STM32_NI2S                     2   /* I2S2 and I2S3 multiplexed with SPI2 and SPI3 */
+#  define STM32_NUSART                   8   /* USART1-USART3 and USART 6, UART5-UART5 and UART7-UART8 */
+#  define STM32_NLPUART                  0   /* No LPUART */
+#  define STM32_NI2C                     3   /* I2C1-I2C3 */
+#  define STM32_NCAN                     2   /* CAN1-CAN2 */
+#  define STM32_NSDIO                    1   /* Secure Digital Input/Output (SDIO) */
+#  define STM32_NLCD                     0   /* No LCD on STM32F427XX family */
+#  define STM32_NUSBOTG                  1   /* USB OTG FS/HS */
+#  define STM32_NGPIO                    130 /* GPIO pins */
+#  define STM32_NADC                     3   /* 12-bit ADC1-ADC3, 24 channels */
+#  define STM32_NDAC                     2   /* 12-bit DAC1-DAC2 */
+#  define STM32_NCAPSENSE                0   /* No capacitive sensing channels */
+#  define STM32_NCRC                     1   /* Cyclic Redundancy Check (CRC) unit */
+#  define STM32_NETHERNET                1   /* 10/100 Ethernet MAC */
+#  define STM32_NRNG                     1   /* Random Number Generator (RNG) */
+#  define STM32_NDCMI                    1   /* Digital Camera Interface (DCMI) */
+
 #elif defined(CONFIG_ARCH_CHIP_STM32F429I)   /* BGA176; LQFP176 1024/2048KiB flash 256KiB SRAM */
 #  define STM32_NFSMC                    1   /* FSMC */
 #  define STM32_NATIM                    2   /* Two advanced timers TIM1 and 8 */
