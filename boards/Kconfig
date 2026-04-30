@@ -4602,6 +4602,9 @@ endif
 if ARCH_BOARD_STM32F411E_DISCO
 source "boards/arm/stm32/stm32f411e-disco/Kconfig"
 endif
+if ARCH_BOARD_STM32F427A_MINIMAL
+source "boards/arm/stm32/stm32f427a-minimal/Kconfig"
+endif
 if ARCH_BOARD_STM32F429I_DISCO
 source "boards/arm/stm32/stm32f429i-disco/Kconfig"
 endif
